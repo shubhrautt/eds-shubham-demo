@@ -1,5 +1,14 @@
 version: 1
 indices:
+  sitemaptest:
+    target: /sitemap-test.json
+    include:
+      - 'fragments/**'
+    properties:
+      title:
+        select: head > meta[property="og:title"]
+        value: |
+          attribute(el, 'content')
   sitemap:
     target: /sitemap.json
     exclude:
