@@ -34,7 +34,7 @@ indices:
   vahicles:
     target: /vahicles.json
     include:
-      - 'fragments/vahicles/**'
+      - 'fragment/vahicles/**'
     properties:
       title:
         select: head > meta[property="og:title"]
