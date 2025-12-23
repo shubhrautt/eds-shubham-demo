@@ -1,6 +1,6 @@
 version: 1
 indices:
-  vehicles:
+  test:
     target: /vehicles-index.json
     include:
       - 'fragment/vehicles/**'
