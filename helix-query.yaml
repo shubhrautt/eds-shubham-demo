@@ -1,14 +1,5 @@
 version: 1
 indices:
-  sitemaptest:
-    target: /sitemap-test.json
-    include:
-      - 'fragments/**'
-    properties:
-      title:
-        select: head > meta[property="og:title"]
-        value: |
-          attribute(el, 'content')
   sitemap:
     target: /sitemap.json
     exclude:
@@ -39,3 +30,14 @@ indices:
       lastModified:
         select: none
         value: parseTimestamp(headers["last-modified"], "ddd, DD MMM YYYY hh:mm:ss GMT")
+
+  
+  test:
+    target: /sitemap-test.json
+    include:
+      - '**'
+    properties:
+      title:
+        select: head > meta[property="og:title"]
+        value: |
+          attribute(el, 'content')
