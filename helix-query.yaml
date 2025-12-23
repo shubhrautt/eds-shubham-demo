@@ -32,10 +32,10 @@ indices:
         value: parseTimestamp(headers["last-modified"], "ddd, DD MMM YYYY hh:mm:ss GMT")
 
 
-  vahicles:
-    target: /vahicles.json
+  vehicles:
+    target: /vehicles.json
     include:
-      - 'fragment/vahicles/**'
+      - 'fragment/vehicles/**'
     properties:
       title:
         select: head > meta[property="og:title"]
