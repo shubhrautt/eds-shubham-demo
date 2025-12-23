@@ -1,7 +1,7 @@
 version: 1
 indices:
   vehicles:
-    target: /vehicles.json
+    target: /vehicles-index.json
     include:
       - 'fragment/vehicles/**'
     properties:
