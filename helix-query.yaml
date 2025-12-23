@@ -30,12 +30,11 @@ indices:
       lastModified:
         select: none
         value: parseTimestamp(headers["last-modified"], "ddd, DD MMM YYYY hh:mm:ss GMT")
-
   
-  test:
-    target: /sitemap-test.json
+  vahicles:
+    target: /vahicles.json
     include:
-      - '**'
+      - 'fragments/vahicles/**'
     properties:
       title:
         select: head > meta[property="og:title"]
